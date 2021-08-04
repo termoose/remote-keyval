@@ -78,7 +78,7 @@ private:
   {
     boost::asio::streambuf buf;
     boost::system::error_code error;
-    char data[1024];
+    char data[max_size];
     std::size_t length = socket.read_some(boost::asio::buffer(data), error);
 
     message msg;

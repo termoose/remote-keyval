@@ -5,6 +5,7 @@
 #include <boost/serialization/serialization.hpp>
 
 constexpr int port = 42069;
+constexpr int max_size = 1024;
 
 struct message
 {

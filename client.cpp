@@ -38,7 +38,7 @@ public:
     
     boost::asio::streambuf recv_buf;
     boost::system::error_code error;
-    char reply[1024];
+    char reply[max_size];
     std::size_t transferred = socket.read_some(boost::asio::buffer(reply), error);
 
     if (transferred)
